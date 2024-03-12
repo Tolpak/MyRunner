@@ -49,7 +49,6 @@ namespace Zenject.Asteroids
             Container.BindInstance(Asteroid.Spawner);
             Container.BindInstance(Asteroid.General);
             Container.BindInstance(AudioHandler);
-            Container.BindInstance(GameInstaller);
         }
     }
 }
