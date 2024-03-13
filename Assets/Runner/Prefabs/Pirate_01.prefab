@@ -932,7 +932,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8015910331062749276}
   - component: {fileID: 2099318329}
-  - component: {fileID: 2099318328}
+  - component: {fileID: 1096163359}
+  - component: {fileID: 8413177257359573865}
   m_Layer: 0
   m_Name: Pirate_01
   m_TagString: Untagged
@@ -949,7 +950,7 @@ Transform:
   m_GameObject: {fileID: 5481701035122274872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -88.08, y: 5.9, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1858403485913688210}
@@ -977,7 +978,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 5
---- !u!114 &2099318328
+--- !u!114 &1096163359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -986,12 +987,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 5481701035122274872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fe7d624b1408b8438a6a85136fc4802, type: 3}
+  m_Script: {fileID: 11500000, guid: ea0b3ec47772478409f0b3997639b517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 2099318329}
   feet: {fileID: 1858403485913688210}
   animator: {fileID: 925769034280347402}
+  Dead:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8413177257359573865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481701035122274872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 1096163359}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &5650626339861270311
 GameObject:
   m_ObjectHideFlags: 0

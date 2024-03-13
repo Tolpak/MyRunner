@@ -13,15 +13,28 @@ MonoBehaviour:
   m_Name: Game Settings Installer
   m_EditorClassIdentifier: 
   Runner:
-    jumpPower:
-      JumpPower: 0
-  Obstacle:
-    Spawner:
-      minSpawnCooldown: 0.7
+    settings:
+      JumpPower: 20
+  Spawner:
+    Obstacles:
+      minSpawnCooldown: 1
       maxSpawnCooldown: 3
-      obstacleSpeed: 7
+      speed: 7
       spawnPoint: {x: 12, y: 0}
-      obstaclePrefab:
-      - {fileID: 6596377444060020205, guid: ca7ff24101826a141b95bc27f8d49174, type: 3}
+      prefabs:
       - {fileID: 1262845738224248471, guid: 36f258ea05b6e8644ae91a5b98eba017, type: 3}
+      - {fileID: 6596377444060020205, guid: ca7ff24101826a141b95bc27f8d49174, type: 3}
       - {fileID: 100006, guid: 174108d41170dfe4b99e461fa4207ec1, type: 3}
+    Collectables:
+      minSpawnCooldown: 3
+      maxSpawnCooldown: 10
+      speed: 7
+      spawnPoint: {x: 12, y: 4}
+      prefabs:
+      - {fileID: 4558815934981611441, guid: 39a58391cd6120b42a1e78cc36de0bef, type: 3}
+      - {fileID: 7963075842638576193, guid: 622ca3daf62560041b4ddd9c6a69cba7, type: 3}
+      - {fileID: 3690566745318477289, guid: 94b6ab0390dd882479f1d6cf36e29cf7, type: 3}
+  Player:
+    FlyingState:
+      flyingHeight: 5
+      flightSpeed: 5

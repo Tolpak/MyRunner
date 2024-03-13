@@ -19,7 +19,7 @@ public abstract class PlayerState : IDisposable
         // optionally overridden
     }
 
-    public virtual void OnTriggerEnter( Collider other )
+    public virtual void OnTriggerEnter( Collider2D other )
     {
         // optionally overridden
     }
