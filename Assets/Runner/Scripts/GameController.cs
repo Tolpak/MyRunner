@@ -23,6 +23,7 @@ public class GameController : IInitializable, ITickable, IDisposable
         this.spawnerFactory = spawnerFactory;
         obstacleSpawner = spawnerFactory.CreateSpawner(Spawners.Obstacle);
         collectableSpawner = spawnerFactory.CreateSpawner(Spawners.Collectable);
+        Application.targetFrameRate = 60;
     }
 
     public GameStates State

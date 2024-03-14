@@ -1,8 +1,5 @@
-using System;
-using UnityEngine;
+
 using Zenject;
-using Zenject.Asteroids;
-using Zenject.SpaceFighter;
 
 // Main installer
 public class GameInstaller : MonoInstaller

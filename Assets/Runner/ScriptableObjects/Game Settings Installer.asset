@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Runner:
     settings:
-      JumpPower: 20
+      JumpPower: 17.2
   Spawner:
     Obstacles:
       minSpawnCooldown: 1
@@ -36,5 +36,5 @@ MonoBehaviour:
       - {fileID: 3690566745318477289, guid: 94b6ab0390dd882479f1d6cf36e29cf7, type: 3}
   Player:
     FlyingState:
-      flyingHeight: 5
-      flightSpeed: 5
+      flyingHeight: 4
+      flightForce: 200.5

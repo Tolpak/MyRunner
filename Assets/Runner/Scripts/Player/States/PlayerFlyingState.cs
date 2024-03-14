@@ -12,6 +12,7 @@ public class PlayerFlyingState : PlayerState
         this.settings = settings;
         player = playerController;
     }
+
     public override void Start()
     {
         player.SetJumpAnimation(true);
@@ -23,8 +24,10 @@ public class PlayerFlyingState : PlayerState
         if (player.transform.position.y < settings.flyingHeight)
         {
             // moving Player to required height
-            player.transform.Translate(Vector3.up * Time.deltaTime * settings.flightSpeed);
-            rigidbody.MovePosition(player.transform.position + Vector3.up);
+            //player.transform.Translate(Vector3.up * Time.deltaTime * settings.flightSpeed);
+            //rigidbody.MovePosition(player.transform.position + Vector3.up);
+            rigidbody.AddForce(Vector2.up * settings.flightForce);
+
         }
     }
 
@@ -32,8 +35,7 @@ public class PlayerFlyingState : PlayerState
     public class Settings
     {
         public float flyingHeight;
-        public float flightSpeed;
-
+        public float flightForce;
     }
 
     public class Factory : PlaceholderFactory<PlayerFlyingState>
